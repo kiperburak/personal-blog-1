@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Burak | Web Developer</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+	<nav>
+		<h1>Burak KİPER</h1>
+		<ul class="navigation">
+			<li><a href="#about" class="nav-link">Hakkımda</a></li>
+			<li><a href="#skills" class="nav-link">Beceriler</a></li>
+			<li><a href="#projects" class="nav-link">Projeler</a></li>
+			<li><a href="#contact" class="nav-link">İletişim</a></li>
+		</ul>
+		<button class="burger-menu" id="burger-menu">
+			<ion-icon class="bars" name="menu-outline"></ion-icon>
+		</button>
+	</nav>
+    
+    <!-- Intro Section -->
+  <section class="intro" id="about">
+    <div class="intro-container">
+      <div class="intro-container intro-card">
+        <img
+        src="assets/images/backround.jpg" 
+        alt="burak-kiper"
+        loading="lazy"
+        class="intro-img"    
+        />
+      </div>
+    </div>
+    <div class="bio animate_animated animate_shakeX">
+      <h2 class="bio-tile">Hakkımda</h2>
+      <p class="bio-text">
+        TEXT TEXT TEXT TEXT TEXT TEXT
+      </p>
+    </div>
+
+  </section>
+
+    <!-- More about -->
+
+    <!-- Skills section -->
+  <section class="skills" id="skills">
+    <h2 class="skill-header">Kullandığım Programlama Dilleri</h2>
+
+    <div class="skill-wrapper">
+      <div class="first-set animate_animated animate_pulse">
+        <img
+          src="assets/icons/icons8-html-5-50.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+        src="assets/icons/icons8-css3-50.svg"
+        alt=""
+        loading="lazy"
+        class="icon icon-card"
+        />
+        <img
+        src="assets/icons/icons8-javascript-logo-50.svg"
+        alt=""
+        loading="lazy"
+        class="icon icon-card"
+         />
+      </div>
+    </div>
+  </section>
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Bazı Projelerim</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="assets/images/hp-1.png"
+            alt="expense-tracker"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Hesap Makinesi</h3>
+          <p class="project-details">
+            HTML,CSS ve JavaScript kullanarak web üzerinde hesap makinesi oluşturuldu.
+          </p>
+          <a href="#" target="_blank" class="project-link">Önizleme</a>
+        </div>
+      </div>
+    </section>
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2>Benimle İletişime Geçin</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/mgeqwgvr" method="POST">
+            <div class="form-control">
+              <label for="name">İsim Soyisim:</label>
+              <input
+                autocomplete="off"
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder=" İsim Soyisim giriniz "
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email:</label>
+              <input
+                autocomplete="off"
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder=" Email giriniz "
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Mesajınız:</label>
+              <textarea
+                autocomplete="off"
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder=" Mesajınızı giriniz "
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Gönder"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+      <a href="#" target="_blank"
+        ><img
+          src="assets/icons/twitter.gif"
+          alt="Twitter"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img
+          src="assets/icons/instagram.gif"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img
+          src="assets/icons/linkedin.gif"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img src="assets/icons/github.gif"  
+          alt="Github"
+          loading="lazy"
+          class="socicon"
+      /></a>
+    </div>
+    <!-- Scroll to top -->
+    <i class="scroll-up" id="scroll-up"
+    ><img
+      src="assets/icons/arrow.gif"
+      class="socicon up-arrow"
+      alt="scroll-up"
+    />
+    </i>
+    <!-- Footer section -->
+    <footer>
+      <p class="copy">&copy; Copyright 2022</p>
+      <p class="copy">
+        Built with &#x2661; by
+        <a href="#" target="_blank"
+          >Burak Kiper</a
+        >
+      </p>
+    </footer>
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
